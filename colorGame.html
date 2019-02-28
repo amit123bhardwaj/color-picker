@@ -6,12 +6,14 @@
 </head>
 
 <body>
-  <h1> A <span id="colorDisplay"> RGB </span> color game </h1>
+  <h1 id="head1">  A <span id="colorDisplay"> RGB </span> color game </h1>
 
-  <div>
+  <div id="strip">
+    <button id="reset"> New Colors</button>
     <span id="message"></span>
+    <button id="easyClick">Easy</button>
+    <button id="hardClick" class="selected">Hard</button>
   </div>
-
 
 <div id="container">
    <div class="square"> </div>
@@ -21,7 +23,6 @@
    <div class="square"> </div>
    <div class="square"> </div>
 </div>
-
 
   <script src="./colorGame.js"></script> 
 </body>
