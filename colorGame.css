@@ -1,35 +1,68 @@
-body{
- background-color:black;
- margin: 0px;
- font-family:"montserrat", "playfair";
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.square{
+.square {
   padding-bottom: 30%;
-  color: white;
+  background-color: white;
   width: 30%;
   float: left;
   margin: 5px;
-}
-h1{
-  color: black;
-  background-color: white;
-  text-align: center;
-}
-span{
-  color: black;
-}
-#strip{
-  height: 30px;
-  color: white;
-  text-align: center;
-  background-color: white;text-align: center;
-}
-.selected{
-  background-color: blue;
-}
-#container{
-  max-height: 300px;
-  text-align: center;
+  border-radius: 15%;
+  transition: background-color, .6s;
 }
 
+h1 {
+  color: black;
+  background-color: rgb(158, 197, 158);
+  text-align: center;
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+
+span {
+  color: black;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+#stripe {
+  height: 30px;
+  text-align: center;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.selected {
+  background-color: rgb(56, 107, 146);
+}
+
+#container {
+  max-height: 300px;
+  /* text-align: center; */
+  margin: 20px auto;
+}
+
+button {
+  font-weight: 700;
+  color: steelblue;
+  background-color: white;
+  font-size: inherit;
+  transition: all 0.3s;            /* may not work in all browser */
+  --webkit-transition: all .3s;
+  --moz-transition: all 0.3s;
+  outline: none;
+}
+
+/* to add hover effect */
+button:hover {
+  color: white;
+  background-color: steelblue;
+}
